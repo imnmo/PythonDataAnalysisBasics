@@ -24,20 +24,9 @@ for node in tree.iter('{http://www.ecb.int/vocabulary/2002-08-01/eurofxref}Cube'
         rate.append(node.attrib.get('rate'))
 
 
-print "####################################################"
-#print time
-#print rate
-
-
 rate=map(float,rate)
-
 dates = [dt.datetime.strptime(d,'%Y-%m-%d').date() for d in time]
-#del dates(-1) # cleanup to remove the last unmatching element
-#print x
-#y1 = range(len(x))
 dates.pop()
-print len(dates),len(rate)
-
 
 plt.plot_date(x=dates, y=rate,fmt="r-")
 plt.title("Currency rate INR in Years")
