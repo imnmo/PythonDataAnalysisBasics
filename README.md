@@ -7,7 +7,7 @@
 
 # Introduction
 
-This repository is road map for implementating all basic to advancd machine learning algorithms from scratch. 
+This repository is road map for implementating all basic to advanced machine learning algorithms from scratch. 
 
 
 # How to contribute
